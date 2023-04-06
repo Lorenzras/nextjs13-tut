@@ -5,7 +5,7 @@ function Header({ title }) {
 }
 
 export default function HomePage() {
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+  const names = ['ゆめのおてつだい', 'ここすも', 'すてくら'];
 
   const [likes, setLikes] = useState(0);
 
@@ -15,14 +15,14 @@ export default function HomePage() {
 
   return (
     <div>
-      <Header title="Develop. Preview. Ship. 🚀" />
+      <Header title="開発. テスト. リリース. 🚀" />
       <ul>
         {names.map((name) => (
           <li key={name}>{name}</li>
         ))}
       </ul>
-
-      <button onClick={handleClick}>Like ({likes})</button>
+      
+      <button onClick={handleClick}>いいね！ ({likes})</button>
     </div>
   );
 }
